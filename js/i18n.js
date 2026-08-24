@@ -37,7 +37,6 @@ var i18n = (function () {
 
 
       /* Cards */
-      stockLabel: "Stock",
       noResults:  "No hay resultados para los filtros actuales.",
 
       /* Formulario */

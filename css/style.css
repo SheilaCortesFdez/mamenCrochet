@@ -56,6 +56,8 @@ body {
   font-size: 1.25rem;
   letter-spacing: 0.04em;
   color: #3a3632;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu { display: flex; gap: 1rem; }
@@ -444,7 +446,7 @@ input[type="range"] {
 }
 
 .check-select-item .check-select-name {
-  flex: 1;
+  flex: 0.95;
 }
 
 .check-select-item .check-select-price {

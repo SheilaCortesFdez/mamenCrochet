@@ -17,12 +17,12 @@
 
   <div id="app">
     <header class="site-header">
-      <div class="logo">🧶 Mamen Crochet</div>
+      <a href="index.html" class="logo">🧶 Mamen Crochet</a>
       <nav class="menu" aria-label="Principal">
         <a href="#catalogo" data-i18n="navCatalogo">Catálogo</a>
+        <a href="gallery.html" data-i18n="navGalery">Creaciones</a>
         <a href="#contacto" data-i18n="navContacto">Contacto</a>
         <a href="aboutme.html" data-i18n="navSobreMi">Sobre Mí</a>
-        <a href="gallery.html" data-i18n="navGalery">Galería</a>
 
       </nav>
     </header>
@@ -74,7 +74,7 @@
                   <label class="form-label"><span data-i18n="labelDireccion">Dirección completa</span>
                     <input type="text" name="direccion" data-i18n-placeholder="phDireccion" placeholder="Calle, número, piso, código postal, ciudad" required />
                   </label>
-                  <div class="form-label form-label-full">
+                    <div class="form-label form-label-full">
                     <span data-i18n="labelMunecos">Muñecos que deseas encargar</span>
                     <div class="check-select" id="checkSelect">
                       <button type="button" class="check-select-toggle" id="checkSelectToggle">
@@ -104,10 +104,22 @@
                         </strong> y te facilitaré los datos de pago una vez confirmemos el pedido.</p>
 
                     </div>
-                    <label class="consent-label">
-                      <input type="checkbox" id="consentCheck" name="consentimiento" value="Aceptado" />
-                      <span data-i18n-html="consentLabel">He leído y acepto la <a href="#" id="openPolicyModal" class="policy-link">política de consentimiento y cancelación</a></span>
-                    </label>
+                    <div class="consent-label">
+                      <input
+                              type="checkbox"
+                              id="consentCheck"
+                              name="consentimiento"
+                              value="Aceptado"
+                      />
+                      <span>He leído y acepto la </span>
+                      <a
+                              href="#"
+                              id="openPolicyModal"
+                              class="policy-link">
+                        política de consentimiento y cancelación
+                      </a>
+
+                    </div>
                   </div>
                 </div>
                 <button type="submit" class="form-submit" id="submitBtn" disabled data-i18n="btnEnviar">Enviar pedido ✉️</button>

@@ -17,42 +17,54 @@
 
         <div id="app">
             <header class="site-header">
-                <div class="logo">🧶 Mamen Crochet</div>
+                <a href="index.html" class="logo">🧶 Mamen Crochet</a>
                 <nav class="menu" aria-label="Principal">
                     <a href="index.html" data-i18n="navCatalogo">Catálogo</a>
-                    <a href="index.html" data-i18n="navContacto">Contacto</a>
+                    <a href="gallery.html" data-i18n="navGalery">Creaciones</a>
+                    <a href="index.html#contacto" data-i18n="navContacto">Contacto</a>
                     <a href="aboutme.html" data-i18n="navSobreMi">Sobre Mí</a>
-                    <a href="gallery.html" data-i18n="navGalery">Galería</a>
-
                 </nav>
             </header>
 
             <main>
                 <section class="hero" id="colecciones">
-                    <h1>🧶 Mi Galería de Amigurumis</h1>
-                    <p>Bienvenid@ a nuestra galería de pequeños tesoros tejidos a mano 🧶✨</p>
-                        <p>Aquí encontrarás una colección de amigurumis que fueron creados con mucho cariño y que ya encontraron un nuevo hogar. Cada pieza es única, hecha con paciencia, dedicación y mucho amor por los pequeños detalles.</p>
+                    <h1>Nuestros Amigurumis</h1>
+                    <p>Una colección de pequeñas historias tejidas a mano 🧶✨</p>
+                    <p>Aquí puedes descubrir algunos de los amigurumis que hemos creado hasta ahora. Cada uno ha sido tejido a mano con dedicación y mucho cariño, cuidando cada pequeño detalle.</p>
+                    <p>¿Te has enamorado de alguno? 💕</p>
+                    <p>Aunque ya haya encontrado un hogar, es posible que podamos hacerlo de nuevo para ti.</p>
+                    <p>Y si tienes una idea en mente, también podemos crear un amigurumi personalizado y hecho especialmente para ti.</p>
+                    <strong>✨ Explora nuestras creaciones y encuentra tu próximo compañero tejido a mano.</strong>
                 </section>
             </main>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="../img/sold/desdentao.jpg" alt="Desdentao de crochet" />
-                    <h3>Desdentao</h3>
-                </div>
-                <div class="product-card">
-                    <img src="../img/sold/demogorgon.jpg" alt="Demogorgon de crochet" />
-                    <h3>Demogorgon</h3>
-                </div>
-                <div class="product-card">
-                    <img src="../img/sold/chopper.jpg" alt="Chopper de crochet" />
-                    <h3>Chopper</h3>
-                </div>
-                <!-- More product cards here -->
-            </div>
+            <div id="gallery-container" class="product-grid"></div>
+            <!-- Modal imagen ampliada -->
+            <div class="image-modal-overlay" id="imageModalOverlay">
+                <div class="image-modal">
 
+                    <button
+                            class="image-modal-close"
+                            id="closeImageModal"
+                            aria-label="Cerrar">
+                        &times;
+                    </button>
+
+                    <div class="image-modal-body">
+                        <img id="imageModalImg" src="" alt="" />
+                    </div>
+
+                    <div class="image-modal-footer">
+                        <h3 id="imageModalName"></h3>
+                        <p id="imageModalDesc"></p>
+                        <p class="image-modal-price" id="imageModalPrice"></p>
+                    </div>
+
+                </div>
+            </div>
             <footer>
                 <p data-i18n="footer">Mamen Crochet © 2026 — Taller artesanal. Pedidos personalizados por mensaje directo.</p>
             </footer>
         </div>
+        <script src="../js/gallery.js"></script>
     </body>
 </html>
